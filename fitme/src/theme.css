@@ -1,0 +1,57 @@
+:root {
+    /* Light mode default colors */
+    --background-dark: #ffffff;
+    --text-primary-dark: #333333;
+    --text-accent-dark: #666666;
+    --card-bg: #f9f9f9;
+    --border-accent: rgba(0, 0, 0, 0.1);
+    --button-bg-from: #4CAF50;
+    --button-bg-to: #2196F3;
+    --button-text: #ffffff;
+  }
+  
+  .dark {
+    /* Dark mode colors */
+    --background-dark: #1a1a1a;
+    --text-primary-dark: #e0e0e0;
+    --text-accent-dark: #b0b0b0;
+    --card-bg: #2a2a2a;
+    --border-accent: rgba(255, 255, 255, 0.1);
+    --button-bg-from: #388E3C;
+    --button-bg-to: #1976D2;
+    --button-text: #e0e0e0;
+  }
+  
+  /* Apply variables to elements */
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  .text-primary-dark {
+    color: var(--text-primary-dark);
+  }
+  
+  .text-accent-dark {
+    color: var(--text-accent-dark);
+  }
+  
+  .border-accent {
+    border-color: var(--border-accent);
+  }
+  
+  .bg-gradient-to-tr {
+    background: linear-gradient(to top right, var(--button-bg-from), var(--button-bg-to));
+  }
+  
+  .text-background-dark {
+    color: var(--button-text);
+  }
+  
+  button:hover {
+    background: linear-gradient(to top right, var(--button-bg-to), var(--button-bg-from));
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+  }
